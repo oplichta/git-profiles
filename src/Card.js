@@ -1,10 +1,9 @@
 import React from 'react';
 import './Card.css';
-import testData from './testData';
 
 class Card extends React.Component {
   render() {
-    const profile = testData[0];
+    const profile = this.props;
     return (
       <div className="git-profile">
         <img src={profile.avatar_url} alt="profile img" />
