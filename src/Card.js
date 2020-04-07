@@ -1,14 +1,16 @@
 import React from 'react';
 import './Card.css';
+import testData from './testData';
 
 class Card extends React.Component {
   render() {
+    const profile = testData[0];
     return (
       <div className="git-profile">
-        <img src="https://placehold.it/75" alt="profile img" />
+        <img src={profile.avatar_url} alt="profile img" />
         <div className="info">
-          <div className="name">Name here...</div>
-          <div className="company">Company here...</div>
+          <div className="name">{profile.name}</div>
+          <div className="company">{profile.company}</div>
         </div>
       </div>
     );
