@@ -1,11 +1,10 @@
 import React from 'react';
 import Card from './Card';
-import testData from './testData';
 
 const CardList = (props) => (
   <div>
-    {testData.map((profile) => (
-      <Card {...profile} />
+    {props.profiles.map((profile) => (
+      <Card key={profile.id} {...profile} />
     ))}
   </div>
 );
