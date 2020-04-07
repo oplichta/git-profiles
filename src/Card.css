@@ -1,0 +1,17 @@
+.git-profile {
+  margin: 1rem;
+}
+
+.git-profile img {
+  width: 75px;
+}
+
+.git-profile .info {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.git-profile .info .name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
